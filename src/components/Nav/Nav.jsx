@@ -1,3 +1,5 @@
+import "./nav.less";
+
 import {
   AppstoreOutlined,
   ContainerOutlined,
@@ -10,6 +12,7 @@ import {
 import { Button, Menu } from "antd";
 import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import React, { useState } from "react";
+
 const { SubMenu } = Menu;
 
 export default function Nav() {
@@ -19,6 +22,7 @@ export default function Nav() {
       <div style={{ width: 600 }}>
         <Button
           type="primary"
+          class="navBtn"
           onClick={() => setcol(!collapsed)}
           style={{ marginBottom: 16 }}
         >
