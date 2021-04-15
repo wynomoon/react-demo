@@ -3,7 +3,8 @@ import "./App.css";
 import React, { useEffect, useState } from "react";
 
 import { Button } from "antd";
-import Nav from "./components/Nav/Nav";
+
+// import Nav from "./components/Nav/Nav";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,7 +14,7 @@ function App() {
   });
   return (
     <div className="App">
-      <Nav />
+      {/* <Nav /> */}
       <p>You clicked {count} times</p>
       <p>You clicked {count1} times</p>
       <Button onClick={() => setCount(count + 1)}>Click me</Button>

@@ -1,4 +1,4 @@
-import "./nav.less";
+import "../Nav/nav.less";
 
 import {
   AppstoreOutlined,
@@ -22,7 +22,7 @@ export default function Nav() {
       <div style={{ width: 600 }}>
         <Button
           type="primary"
-          class="navBtn"
+          className="navBtn"
           onClick={() => setcol(!collapsed)}
           style={{ marginBottom: 16 }}
         >
