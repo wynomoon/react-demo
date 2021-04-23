@@ -5,36 +5,24 @@ import {
   ContainerOutlined,
   DesktopOutlined,
   MailOutlined,
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
   PieChartOutlined,
 } from "@ant-design/icons";
-import { Button, Menu } from "antd";
 import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import React, { useState } from "react";
+
+import About from "../../views/About";
+import { Menu } from "antd";
 
 const { SubMenu } = Menu;
 
 export default function Nav() {
-  const [collapsed, setcol] = useState(false);
+  const [collapsed] = useState(false);
   return (
     <Router>
-      <div style={{ width: 600 }}>
-        <Button
-          type="primary"
-          className="navBtn"
-          onClick={() => setcol(!collapsed)}
-          style={{ marginBottom: 16 }}
-        >
-          {React.createElement(
-            collapsed ? MenuUnfoldOutlined : MenuFoldOutlined
-          )}
-        </Button>
+      <div>
         <Menu
           defaultSelectedKeys={["1"]}
-          defaultOpenKeys={["sub1"]}
-          mode="inline"
-          theme="dark"
+          mode="horizontal"
           inlineCollapsed={collapsed}
         >
           <Menu.Item key="1" icon={<PieChartOutlined />}>
@@ -74,8 +62,4 @@ export default function Nav() {
       </div>
     </Router>
   );
-}
-
-function About() {
-  return <h2>About sss</h2>;
 }
