@@ -21,7 +21,7 @@ export default function Nav() {
     <Router>
       <div>
         <Menu
-          defaultSelectedKeys={["1"]}
+          defaultSelectedKeys={["2"]}
           mode="horizontal"
           inlineCollapsed={collapsed}
         >
