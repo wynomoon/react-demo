@@ -20,11 +20,7 @@ export default function Nav() {
   return (
     <Router>
       <div>
-        <Menu
-          defaultSelectedKeys={["2"]}
-          mode="horizontal"
-          inlineCollapsed={collapsed}
-        >
+        <Menu mode="horizontal" inlineCollapsed={collapsed}>
           <Menu.Item key="1" icon={<PieChartOutlined />}>
             <Link to="/about">About</Link>
           </Menu.Item>
